@@ -1,0 +1,199 @@
+name: meyoi
+description: "A Make-Up Editor"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.2.1
+  google_mlkit_face_mesh_detection: ^0.4.1
+  image_picker: ^1.2.0
+  carousel_slider: ^5.1.1
+  interactive_viewer_2: ^0.1.0
+  image_cropper: ^8.1.0
+  flutter_colorpicker: ^1.1.0
+  path_provider: ^2.1.5
+  image_gallery_saver_plus: ^4.0.1
+  permission_handler: ^12.0.1
+  image: ^4.5.4
+  intl: ^0.20.2
+  # firebase
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  shared_preferences: ^2.3.0
+  cloud_firestore: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/logo.svg
+    # - assets/images/img_banner.svg
+    - assets/images/notfound.svg
+    - assets/images/panah.svg
+    # - assets/images/gpt.svg
+    # - assets/images/polygon.svg
+    - assets/images/Poly.png
+    # - assets/images/bnn.jpg
+    # - assets/images/welcome.svg
+    - assets/images/ttr_1.png
+    - assets/images/ttr_2.png
+    - assets/images/ttr_3.png
+    - assets/images/fk.png
+    - assets/images/home_bn.png
+    # - assets/images/hm.jpg
+    - assets/images/Shine.png
+    # - assets/images/arrow_down.svg
+    - assets/images/eye_icon.svg
+    - assets/images/alis_icon.svg
+    - assets/images/pipi_icon.svg
+    - assets/images/eyelash_icon.svg
+    - assets/images/lip_icon.svg
+    - assets/images/face_icon.svg
+    - assets/images/default_icon.svg
+    - assets/images/eyelash_style_1.png
+    - assets/images/avatar2.png
+    - assets/images/logout_img.png
+    
+    # eyebrow style icon
+    - assets/images/eyebrow/eyebrow_hard_icon.png
+    - assets/images/eyebrow/eyebrow_rounded_icon.png
+    - assets/images/eyebrow/eyebrow_s_icon.png
+    - assets/images/eyebrow/eyebrow_straight_icon.png
+
+    # lipstick style icon
+    - assets/images/lipstick/lipstick_cupid_icon.png
+    - assets/images/lipstick/lipstick_classic_icon.png
+    - assets/images/lipstick/lipstick_hollywood_icon.png
+    - assets/images/lipstick/lipstick_pearlique_icon.png
+    - assets/images/lipstick/lipstick_goddess_icon.png
+
+    # eyelash style icon
+    - assets/images/eyelash/eyelash_lifted_icon.png
+    - assets/images/eyelash/eyelash_stag_icon.png
+    - assets/images/eyelash/eyelash_cat_icon.png
+    - assets/images/eyelash/eyelash_doll_icon.png
+    - assets/images/eyelash/eyelash_natural_icon.png
+
+    # lipstick cupid
+    - assets/images/lipstick/cupid/lipstick_cupid_atas.png
+    - assets/images/lipstick/cupid/lipstick_cupid_bawah.png
+    
+    # lipstick classic
+    - assets/images/lipstick/classic/lipstick_classic_atas.png
+    - assets/images/lipstick/classic/lipstick_classic_bawah.png
+    
+    # lipstick hollywood
+    - assets/images/lipstick/hollywood/lipstick_hollywood_atas.png
+    - assets/images/lipstick/hollywood/lipstick_hollywood_bawah.png
+    
+    # lipstick goddess
+    - assets/images/lipstick/goddess/lipstick_goddess_atas.png
+    - assets/images/lipstick/goddess/lipstick_goddess_bawah.png
+    
+    # lipstick pearlique
+    - assets/images/lipstick/pearlique/lipstick_pearlique_atas.png
+    - assets/images/lipstick/pearlique/lipstick_pearlique_bawah.png
+    
+    # eyebrow hard-angle
+    - assets/images/eyebrow/hard/eyebrow_hard_left.png
+    - assets/images/eyebrow/hard/eyebrow_hard_right.png
+    
+    # eyealash cat
+    - assets/images/eyelash/cat/eyelash_cat_left.png
+    - assets/images/eyelash/cat/eyelash_cat_right.png
+    
+    # eyealash doll
+    - assets/images/eyelash/doll/eyelash_doll_left.png
+    - assets/images/eyelash/doll/eyelash_doll_right.png
+    
+    # eyealash lifted
+    - assets/images/eyelash/lifted/eyelash_lifted_left.png
+    - assets/images/eyelash/lifted/eyelash_lifted_right.png
+    
+    # eyealash staggered
+    - assets/images/eyelash/staggered/eyelash_staggered_left.png
+    - assets/images/eyelash/staggered/eyelash_staggered_right.png
+    
+    # eyealash natural
+    - assets/images/eyelash/natural/eyelash_natural_left.png
+    - assets/images/eyelash/natural/eyelash_natural_right.png
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
