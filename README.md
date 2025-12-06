@@ -1,17 +1,14 @@
-# meyoi
+# Meyoi Face Editor App
 
 A new Flutter project.
 
-## Getting Started
+## Screen Shot
 
-This project is a starting point for a Flutter application.
+### Home Screen
+<img width="214" height="466" alt="image" src="https://github.com/user-attachments/assets/c6c1be8c-6aee-4a31-9722-71cc4bf42f54" />
 
-A few resources to get you started if this is your first Flutter project:
+### Edit Screen
+<img width="223" height="484" alt="image" src="https://github.com/user-attachments/assets/070ee380-4f57-4122-858f-e27c00e3cae0" />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Meyoi-Photo-Editor" 
+# Edit Scene
+<img width="221" height="491" alt="image" src="https://github.com/user-attachments/assets/0e8e31bb-ca18-4d32-8320-1265ccf50bd8" />
